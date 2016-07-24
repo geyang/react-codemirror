@@ -24,11 +24,11 @@ var _autobindDecorator = require('autobind-decorator');
 
 var _autobindDecorator2 = _interopRequireDefault(_autobindDecorator);
 
-var _prosemirror = require('prosemirror');
+var _codemirror = require('codemirror');
 
-var _prosemirror2 = _interopRequireDefault(_prosemirror);
+var _codemirror2 = _interopRequireDefault(_codemirror);
 
-var _schemaBasic = require('prosemirror/dist/schema-basic');
+var _schemaBasic = require('codemirror/dist/schema-basic');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79,16 +79,16 @@ var oneOf = _react.PropTypes.oneOf;
  * description of the component
  */
 
-var ProseMirror = (_class = (_temp = _class2 = function (_Component) {
-  _inherits(ProseMirror, _Component);
+var CodeMirror = (_class = (_temp = _class2 = function (_Component) {
+  _inherits(CodeMirror, _Component);
 
-  function ProseMirror() {
-    _classCallCheck(this, ProseMirror);
+  function CodeMirror() {
+    _classCallCheck(this, CodeMirror);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ProseMirror).apply(this, arguments));
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(CodeMirror).apply(this, arguments));
   }
 
-  _createClass(ProseMirror, [{
+  _createClass(CodeMirror, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
       this.setState({ currentIndex: 0 });
@@ -101,7 +101,7 @@ var ProseMirror = (_class = (_temp = _class2 = function (_Component) {
       var options = _props2.options;
 
       this.editorNode = this.refs.editorNode;
-      this.editor = new _prosemirror2.default.ProseMirror(_extends({
+      this.editor = new _codemirror2.default.CodeMirror(_extends({
         place: this.editorNode,
         schema: _schemaBasic.schema,
         doc: doc
@@ -128,18 +128,18 @@ var ProseMirror = (_class = (_temp = _class2 = function (_Component) {
       }
       if (options !== this.props.options) {
         console.log('update options =============');
-        this._removeProseMirror();
+        this._removeCodeMirror();
         this._mountEditor();
       }
     }
   }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      this._removeProseMirror();
+      this._removeCodeMirror();
     }
   }, {
-    key: '_removeProseMirror',
-    value: function _removeProseMirror() {
+    key: '_removeCodeMirror',
+    value: function _removeCodeMirror() {
       Array.prototype.slice.call(this.editorNode.childNodes).map(this.editorNode.removeChild.bind(this.editorNode));
     }
   }, {
@@ -192,7 +192,7 @@ var ProseMirror = (_class = (_temp = _class2 = function (_Component) {
     }
   }]);
 
-  return ProseMirror;
+  return CodeMirror;
 }(_react.Component), _class2.propTypes = {
   doc: any,
   selection: any,
@@ -201,7 +201,7 @@ var ProseMirror = (_class = (_temp = _class2 = function (_Component) {
 }, _class2.defaultProps = {
   options: {}
 }, _temp), (_applyDecoratedDescriptor(_class.prototype, 'onChange', [_autobindDecorator2.default], Object.getOwnPropertyDescriptor(_class.prototype, 'onChange'), _class.prototype), _applyDecoratedDescriptor(_class.prototype, 'onSelectionChange', [_autobindDecorator2.default], Object.getOwnPropertyDescriptor(_class.prototype, 'onSelectionChange'), _class.prototype)), _class);
-exports.default = ProseMirror;
+exports.default = CodeMirror;
 ;
 
 (function () {
@@ -209,17 +209,17 @@ exports.default = ProseMirror;
     return;
   }
 
-  __REACT_HOT_LOADER__.register(any, 'any', 'src/ProseMirror.js');
+  __REACT_HOT_LOADER__.register(any, 'any', 'src/CodeMirror.js');
 
-  __REACT_HOT_LOADER__.register(func, 'func', 'src/ProseMirror.js');
+  __REACT_HOT_LOADER__.register(func, 'func', 'src/CodeMirror.js');
 
-  __REACT_HOT_LOADER__.register(bool, 'bool', 'src/ProseMirror.js');
+  __REACT_HOT_LOADER__.register(bool, 'bool', 'src/CodeMirror.js');
 
-  __REACT_HOT_LOADER__.register(string, 'string', 'src/ProseMirror.js');
+  __REACT_HOT_LOADER__.register(string, 'string', 'src/CodeMirror.js');
 
-  __REACT_HOT_LOADER__.register(oneOf, 'oneOf', 'src/ProseMirror.js');
+  __REACT_HOT_LOADER__.register(oneOf, 'oneOf', 'src/CodeMirror.js');
 
-  __REACT_HOT_LOADER__.register(ProseMirror, 'ProseMirror', 'src/ProseMirror.js');
+  __REACT_HOT_LOADER__.register(CodeMirror, 'CodeMirror', 'src/CodeMirror.js');
 })();
 
 ;

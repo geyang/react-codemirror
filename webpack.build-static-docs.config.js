@@ -35,7 +35,7 @@ module.exports = {
         loader: 'source-map-loader'
       },
       {
-        test: /prosemirror\/src\//,
+        test: /codemirror\/src\//,
         loaders: ['babel'] // 'regenerator',  for generator syntax
       }
     ],

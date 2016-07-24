@@ -26,16 +26,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var number = _react.PropTypes.number;
 var string = _react.PropTypes.string;
-var ProseMirror = (_temp = _class = function (_Component) {
-  _inherits(ProseMirror, _Component);
+var CodeMirror = (_temp = _class = function (_Component) {
+  _inherits(CodeMirror, _Component);
 
-  function ProseMirror() {
-    _classCallCheck(this, ProseMirror);
+  function CodeMirror() {
+    _classCallCheck(this, CodeMirror);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ProseMirror).apply(this, arguments));
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(CodeMirror).apply(this, arguments));
   }
 
-  _createClass(ProseMirror, [{
+  _createClass(CodeMirror, [{
     key: "render",
     value: function render() {
       return _react2.default.createElement(
@@ -50,11 +50,11 @@ var ProseMirror = (_temp = _class = function (_Component) {
     }
   }]);
 
-  return ProseMirror;
+  return CodeMirror;
 }(_react.Component), _class.propTypes = {
   style: string.isRequired
 }, _temp);
-exports.default = ProseMirror;
+exports.default = CodeMirror;
 ;
 
 (function () {
@@ -62,11 +62,11 @@ exports.default = ProseMirror;
     return;
   }
 
-  __REACT_HOT_LOADER__.register(number, "number", "src/ProseMirror.spec.js");
+  __REACT_HOT_LOADER__.register(number, "number", "src/CodeMirror.spec.js");
 
-  __REACT_HOT_LOADER__.register(string, "string", "src/ProseMirror.spec.js");
+  __REACT_HOT_LOADER__.register(string, "string", "src/CodeMirror.spec.js");
 
-  __REACT_HOT_LOADER__.register(ProseMirror, "ProseMirror", "src/ProseMirror.spec.js");
+  __REACT_HOT_LOADER__.register(CodeMirror, "CodeMirror", "src/CodeMirror.spec.js");
 })();
 
 ;

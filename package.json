@@ -1,5 +1,5 @@
 {
-    "name": "@episodeyang/react-prosemirror",
+    "name": "@episodeyang/react-codemirror",
     "version": "0.8.0",
     "private": false,
     "description": "a template for react es6 components. Contains webpack configuration and document generator.",
@@ -23,7 +23,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/episodeyang/react-prosemirror.git"
+        "url": "git+https://github.com/episodeyang/react-codemirror.git"
     },
     "keywords": [
         "react",
@@ -38,9 +38,9 @@
     "author": "Ge Yang <yangge1987@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/episodeyang/react-prosemirror/issues"
+        "url": "https://github.com/episodeyang/react-codemirror/issues"
     },
-    "homepage": "https://github.com/episodeyang/react-prosemirror#readme",
+    "homepage": "https://github.com/episodeyang/react-codemirror#readme",
     "devDependencies": {
         "@episodeyang/react-highlight.js": "^1.0.3",
         "autoprefixer": "^6.3.6",
@@ -93,6 +93,6 @@
         "autobind-decorator": "^1.3.3"
     },
     "peerDependencies": {
-        "prosemirror": "0.8.3"
+        "codemirror": "0.8.3"
     }
 }

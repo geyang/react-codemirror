@@ -4,7 +4,7 @@
 import React, {Component, PropTypes} from "react";
 
 var {number, string} = PropTypes;
-export default class ProseMirror extends Component {
+export default class CodeMirror extends Component {
   static propTypes = {
     style: string.isRequired,
   };

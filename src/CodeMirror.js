@@ -4,15 +4,15 @@
 import React, {Component, PropTypes} from 'react';
 import {findDOMNode} from 'react-dom';
 import autobind from 'autobind-decorator';
-import prosemirror from 'prosemirror'
-import {schema} from 'prosemirror/dist/schema-basic';
+import codemirror from 'codemirror'
+import {schema} from 'codemirror/dist/schema-basic';
 
 var {any, func, bool, string, oneOf} = PropTypes;
 
 /**
  * description of the component
  */
-export default class ProseMirror extends Component {
+export default class CodeMirror extends Component {
 
   static propTypes = {
     doc: any,
@@ -32,7 +32,7 @@ export default class ProseMirror extends Component {
   _mountEditor() {
     const {doc, options} = this.props;
     this.editorNode = this.refs.editorNode;
-    this.editor = new prosemirror.ProseMirror({
+    this.editor = new codemirror.CodeMirror({
         place: this.editorNode,
         schema,
         doc,
@@ -56,16 +56,16 @@ export default class ProseMirror extends Component {
     }
     if (options !== this.props.options) {
       console.log('update options =============');
-      this._removeProseMirror();
+      this._removeCodeMirror();
       this._mountEditor()
     }
   }
 
   componentWillUnmount() {
-    this._removeProseMirror();
+    this._removeCodeMirror();
   }
 
-  _removeProseMirror() {
+  _removeCodeMirror() {
     Array.prototype.slice.call(this.editorNode.childNodes).map(this.editorNode.removeChild.bind(this.editorNode));
   }
 

@@ -24,9 +24,9 @@ var _autobindDecorator = require('autobind-decorator');
 
 var _autobindDecorator2 = _interopRequireDefault(_autobindDecorator);
 
-var _ProseMirror = require('./ProseMirror');
+var _CodeMirror = require('./CodeMirror');
 
-var _ProseMirror2 = _interopRequireDefault(_ProseMirror);
+var _CodeMirror2 = _interopRequireDefault(_CodeMirror);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -44,16 +44,16 @@ var style = {
   minHeight: '200px'
 };
 
-var ProseMirrorExample = (0, _autobindDecorator2.default)(_class = function (_Component) {
-  _inherits(ProseMirrorExample, _Component);
+var CodeMirrorExample = (0, _autobindDecorator2.default)(_class = function (_Component) {
+  _inherits(CodeMirrorExample, _Component);
 
-  function ProseMirrorExample() {
-    _classCallCheck(this, ProseMirrorExample);
+  function CodeMirrorExample() {
+    _classCallCheck(this, CodeMirrorExample);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ProseMirrorExample).apply(this, arguments));
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(CodeMirrorExample).apply(this, arguments));
   }
 
-  _createClass(ProseMirrorExample, [{
+  _createClass(CodeMirrorExample, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
       this.setState({ doc: undefined, selection: undefined });
@@ -82,7 +82,7 @@ var ProseMirrorExample = (0, _autobindDecorator2.default)(_class = function (_Co
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_ProseMirror2.default, { style: style, onChange: this.onChange, doc: doc, selection: selection }),
+        _react2.default.createElement(_CodeMirror2.default, { style: style, onChange: this.onChange, doc: doc, selection: selection }),
         _react2.default.createElement(
           _reactHighlight2.default,
           null,
@@ -92,10 +92,10 @@ var ProseMirrorExample = (0, _autobindDecorator2.default)(_class = function (_Co
     }
   }]);
 
-  return ProseMirrorExample;
+  return CodeMirrorExample;
 }(_react.Component)) || _class;
 
-exports.default = ProseMirrorExample;
+exports.default = CodeMirrorExample;
 ;
 
 (function () {
@@ -103,13 +103,13 @@ exports.default = ProseMirrorExample;
     return;
   }
 
-  __REACT_HOT_LOADER__.register(number, 'number', 'src/ProseMirror.example.js');
+  __REACT_HOT_LOADER__.register(number, 'number', 'src/CodeMirror.example.js');
 
-  __REACT_HOT_LOADER__.register(string, 'string', 'src/ProseMirror.example.js');
+  __REACT_HOT_LOADER__.register(string, 'string', 'src/CodeMirror.example.js');
 
-  __REACT_HOT_LOADER__.register(style, 'style', 'src/ProseMirror.example.js');
+  __REACT_HOT_LOADER__.register(style, 'style', 'src/CodeMirror.example.js');
 
-  __REACT_HOT_LOADER__.register(ProseMirrorExample, 'ProseMirrorExample', 'src/ProseMirror.example.js');
+  __REACT_HOT_LOADER__.register(CodeMirrorExample, 'CodeMirrorExample', 'src/CodeMirror.example.js');
 })();
 
 ;

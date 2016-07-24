@@ -11,9 +11,9 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ProseMirror = require("./ProseMirror");
+var _CodeMirror = require("./CodeMirror");
 
-var _ProseMirror2 = _interopRequireDefault(_ProseMirror);
+var _CodeMirror2 = _interopRequireDefault(_CodeMirror);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29,19 +29,19 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var number = _react.PropTypes.number;
 var string = _react.PropTypes.string;
 
-var ProseMirrorExample = function (_Component) {
-  _inherits(ProseMirrorExample, _Component);
+var CodeMirrorExample = function (_Component) {
+  _inherits(CodeMirrorExample, _Component);
 
-  function ProseMirrorExample() {
-    _classCallCheck(this, ProseMirrorExample);
+  function CodeMirrorExample() {
+    _classCallCheck(this, CodeMirrorExample);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ProseMirrorExample).apply(this, arguments));
+    return _possibleConstructorReturn(this, Object.getPrototypeOf(CodeMirrorExample).apply(this, arguments));
   }
 
-  _createClass(ProseMirrorExample, [{
+  _createClass(CodeMirrorExample, [{
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_ProseMirror2.default, { lattice: true,
+      return _react2.default.createElement(_CodeMirror2.default, { lattice: true,
         protein: "turkey",
         cheese: "PepperJack",
         onBite: function onBite() {
@@ -51,10 +51,10 @@ var ProseMirrorExample = function (_Component) {
     }
   }]);
 
-  return ProseMirrorExample;
+  return CodeMirrorExample;
 }(_react.Component);
 
-exports.default = ProseMirrorExample;
+exports.default = CodeMirrorExample;
 ;
 
 (function () {
@@ -62,11 +62,11 @@ exports.default = ProseMirrorExample;
     return;
   }
 
-  __REACT_HOT_LOADER__.register(number, "number", "src/ProseMirror.example.js");
+  __REACT_HOT_LOADER__.register(number, "number", "src/CodeMirror.example.js");
 
-  __REACT_HOT_LOADER__.register(string, "string", "src/ProseMirror.example.js");
+  __REACT_HOT_LOADER__.register(string, "string", "src/CodeMirror.example.js");
 
-  __REACT_HOT_LOADER__.register(ProseMirrorExample, "ProseMirrorExample", "src/ProseMirror.example.js");
+  __REACT_HOT_LOADER__.register(CodeMirrorExample, "CodeMirrorExample", "src/CodeMirror.example.js");
 })();
 
 ;

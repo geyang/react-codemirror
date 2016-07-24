@@ -7,33 +7,33 @@ import Markdown from "react-markdownit";
 import Highlight from "@episodeyang/react-highlight.js";
 import PropsTable from "react-component-props-table";
 
-import ProseMirrorExample from "../ProseMirror.example";
-import ProseMirrorSource from "!!raw!../ProseMirror.example";
-import ProseMirrorAST from "!!react-docgen!../ProseMirror";
+import CodeMirrorExample from "../CodeMirror.example";
+import CodeMirrorSource from "!!raw!../CodeMirror.example";
+import CodeMirrorAST from "!!react-docgen!../CodeMirror";
 
 export default function Readme({}) {
   return (
     <Markdown stripIndent={true}>
       {`
-      # React-ProseMirror demo
+      # React-CodeMirror demo
 
       ## About this
 
-      This is not a fork of react-prosemirror. This is a different react
-      wrapper of prosemirror that handles change events and cursors synchronously
+      This is not a fork of react-codemirror. This is a different react
+      wrapper of codemirror that handles change events and cursors synchronously
       to make it easy to do real-time collaboration in a redux architecture.
       
       ## Usage
       `}
-      <Highlight>{`npm install @episodeyang/react-prosemirror`}</Highlight>
+      <Highlight>{`npm install @episodeyang/react-codemirror`}</Highlight>
       {`
       ### How is this README written:
       This readme is written with react and markdown. It includes:
-      1. a **live react-prosemirror component demo**
+      1. a **live react-codemirror component demo**
       2. a table of the component's props that is generated automatically
       3. **source** of the example component
 
-      ## Example Component: \`ProseMirror\`
+      ## Example Component: \`CodeMirror\`
       This component provides both the selection and the serialized document json object
       \`onChange\`.
 
@@ -51,13 +51,13 @@ export default function Readme({}) {
       ### Props
       {`This table below is generated automatically`}
       <div className="table-container horizontal-scroll flex-column center">
-        <PropsTable propMetaData={ProseMirrorAST.props}/>
+        <PropsTable propMetaData={CodeMirrorAST.props}/>
       </div>{`
       ### Demo
 
       Below is a live demo. You can open the Chrome React developer tool to look at the updated props.
       `}
-      <ProseMirrorExample/>
+      <CodeMirrorExample/>
       {`
       ### Known Issues
 
@@ -67,16 +67,16 @@ export default function Readme({}) {
       ### Usage Example
 
       The source code below of the example above is loaded using the webpack raw loader.`}
-      <Highlight>{ProseMirrorSource}</Highlight>
+      <Highlight>{CodeMirrorSource}</Highlight>
       {`
       ## Develop
 
       1. first run \`npm install\`
-      2. now install prosemirror. Because it is a peer dependency, you need to
+      2. now install codemirror. Because it is a peer dependency, you need to
          install it separately.
 
         ~~~shell
-        npm install prosemirror
+        npm install codemirror
         ~~~
       3. Now make your changes, then git commit. Use \`serve-docs\` to view live update at [http://localhost:5000](http://localhost:5000).
       4. run \`build-docs\`, \`build-static-docs\`, \`gh-pages\`

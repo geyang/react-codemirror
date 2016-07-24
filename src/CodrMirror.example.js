@@ -4,7 +4,7 @@
 import React, {Component, PropTypes} from "react";
 import Highlight from '@episodeyang/react-highlight.js';
 import autobind from 'autobind-decorator';
-import ProseMirror from "./ProseMirror";
+import CodeMirror from "./CodeMirror";
 
 var {number, string} = PropTypes;
 const style = {
@@ -12,7 +12,7 @@ const style = {
   minHeight: '200px'
 };
 @autobind
-export default class ProseMirrorExample extends Component {
+export default class CodeMirrorExample extends Component {
   componentWillMount() {
     this.setState({doc: undefined, selection: undefined});
   }
@@ -33,7 +33,7 @@ export default class ProseMirrorExample extends Component {
     }
     return (
       <div>
-        <ProseMirror style={style} onChange={this.onChange} doc={doc} selection={selection}/>
+        <CodeMirror style={style} onChange={this.onChange} doc={doc} selection={selection}/>
         <Highlight>
 {`state = {
     selection: ${JSON.stringify(selection)},

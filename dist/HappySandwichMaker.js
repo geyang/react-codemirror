@@ -48,21 +48,21 @@ var style = {
 /**
  * description of the component
  */
-var ProseMirror = (_temp2 = _class = function (_Component) {
-  _inherits(ProseMirror, _Component);
+var CodeMirror = (_temp2 = _class = function (_Component) {
+  _inherits(CodeMirror, _Component);
 
-  function ProseMirror() {
+  function CodeMirror() {
     var _Object$getPrototypeO;
 
     var _temp, _this, _ret;
 
-    _classCallCheck(this, ProseMirror);
+    _classCallCheck(this, CodeMirror);
 
     for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(ProseMirror)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.wisdoms = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(CodeMirror)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.wisdoms = {
       0: { text: "Click Me!", action: "next", color: "#49CAF5" },
       1: { text: "I can make you sandwiches!", action: "next", color: "rgb(251, 155, 165)" },
       2: {
@@ -74,7 +74,7 @@ var ProseMirror = (_temp2 = _class = function (_Component) {
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
-  _createClass(ProseMirror, [{
+  _createClass(CodeMirror, [{
     key: "componentWillMount",
     value: function componentWillMount() {
       this.setState({ currentIndex: 0 });
@@ -118,7 +118,7 @@ var ProseMirror = (_temp2 = _class = function (_Component) {
     }
   }]);
 
-  return ProseMirror;
+  return CodeMirror;
 }(_react.Component), _class.propTypes = {
   /** Whether we add lattice */
   lattice: bool,
@@ -141,7 +141,7 @@ var ProseMirror = (_temp2 = _class = function (_Component) {
 }, _class.defaultProps = {
   lattice: true
 }, _temp2);
-exports.default = ProseMirror;
+exports.default = CodeMirror;
 ;
 
 (function () {
@@ -149,17 +149,17 @@ exports.default = ProseMirror;
     return;
   }
 
-  __REACT_HOT_LOADER__.register(func, "func", "src/ProseMirror.js");
+  __REACT_HOT_LOADER__.register(func, "func", "src/CodeMirror.js");
 
-  __REACT_HOT_LOADER__.register(bool, "bool", "src/ProseMirror.js");
+  __REACT_HOT_LOADER__.register(bool, "bool", "src/CodeMirror.js");
 
-  __REACT_HOT_LOADER__.register(string, "string", "src/ProseMirror.js");
+  __REACT_HOT_LOADER__.register(string, "string", "src/CodeMirror.js");
 
-  __REACT_HOT_LOADER__.register(oneOf, "oneOf", "src/ProseMirror.js");
+  __REACT_HOT_LOADER__.register(oneOf, "oneOf", "src/CodeMirror.js");
 
-  __REACT_HOT_LOADER__.register(style, "style", "src/ProseMirror.js");
+  __REACT_HOT_LOADER__.register(style, "style", "src/CodeMirror.js");
 
-  __REACT_HOT_LOADER__.register(ProseMirror, "ProseMirror", "src/ProseMirror.js");
+  __REACT_HOT_LOADER__.register(CodeMirror, "CodeMirror", "src/CodeMirror.js");
 })();
 
 ;

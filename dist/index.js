@@ -4,12 +4,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ProseMirror = require("./ProseMirror");
+var _CodeMirror = require("./CodeMirror");
 
 Object.defineProperty(exports, "default", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_ProseMirror).default;
+    return _interopRequireDefault(_CodeMirror).default;
   }
 });
 
